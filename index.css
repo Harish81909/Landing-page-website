@@ -1,0 +1,202 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/*navbar*/
+#navbar{
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:100;
+}
+.box{
+    background-color:skyblue;
+    padding:.5rem 5rem;
+    box-shadow:5px 5px 10px black
+}
+.box .navbar-brand{
+    color:lightcoral !important;
+    font-size:30px;
+    font-weight:800px;
+}
+.box .nav-link{
+    color:white !important;
+} 
+.collapse a{
+   cursor:pointer;
+   font-size:25px;
+   transition: all 1s;
+   position:relative;
+}
+.collapse a::before{
+    content: "";
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    height:10%;
+    width:0%;
+    background-color:rgb(200,90,10);
+    transition: all 1s;
+}
+.collapse a::after{
+    content: "";
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    height:10%;
+    width:0%;
+    background-color:rgb(200,90,10);
+    transition: all 1s;
+}
+.collapse a:hover::before, .collapse a:hover::after{
+    width:50%;
+}
+/*home*/
+section{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+#home{
+    background:linear-gradient(rgba(40, 15, 184, 0.4),rgba(40, 15, 184, 0.4)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXX2nLUoWhjpbVWLao4O8CntCa1SyGMcwOlw&s.jpg") no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+#home h1{
+    font-size:50px;
+    letter-spacing:3px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+}
+button{
+    color:white !important;
+    background-color:greenyellow !important;
+}
+.box1{
+    background-color:rgba(0,0,0,0.5);
+    padding:10px 10px 10px 10px;
+    text-align: center;
+    border-radius:10px;
+    box-shadow:5px 5px 10px black,
+               5px 5px 10px black;
+   display:flex;
+   flex-direction:column;
+   align-items: center;
+   justify-content: center;
+   gap:10px;
+}
+#about{
+    background:linear-gradient(to right,skyblue,black);
+}
+#about h1{
+    color:white;
+}
+#about p{
+    color:white;
+}
+img{
+    height: 200%;
+    width:100%;
+    border-radius:10px;
+    box-shadow:5px 5px 10px black,5px 5px 10px black,5px 5px 10px black,5px 5px 10px black;
+}
+/*services*/
+#services{
+    background:linear-gradient(rgba(9, 106, 131, 0.521),rgba(8, 5, 22, 0.4)),fixed url("https://cdn.powa.com/www.plumbingbyjake.com/images/wp-content/uploads/2020/03/blog-what-to-put-down-the-toilet-to-clean-pipes-365-critical-mobile.jpg") no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.change{
+    height:150px;
+    width:200px;
+    background-color: white;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin:30px 20px;
+    padding:5px;
+    gap:25px;
+    transition-duration: 1s;
+
+}
+.change:hover{
+    border:5px solid orange;
+    background-color:orange;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    transform:scale(1.2,1.3);
+
+}
+.change:hover .fas{
+   height:70px;
+   width:70px;
+   border-radius:50%;
+   background-color:white;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+}
+.fas{
+    font-size:35px;
+}
+/*contact*/
+#contact p{
+    width:300px;
+}
+.desk{
+    display:flex;
+    align-items:center;
+    justify-content: end;
+}
+.fa-solid{
+    font-size:30px;
+    color:skyblue;
+}
+#contact input{
+    margin-top:10px;
+
+}
+#contact textarea{
+    margin-top:10px;
+}
+#contact button{
+    margin-top:10px;
+}
+footer{
+    color:white;
+    padding-top:10px;
+    background-color:darkblue;
+}
+footer .reset{
+    display:flex;
+    justify-content:space-between;
+}
+footer .face{
+    height:70px;
+    width: 70px;
+    border-radius:50%;
+    background-color:black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+@media only screen and (min-width:300px) and (max-width:600px){
+    section{
+        overflow-x: hidden;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:800px){
+    section{
+        overflow-x: hidden;
+    }
+}
+
